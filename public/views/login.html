@@ -1,0 +1,17 @@
+<h1>Login</h1>
+<!-- using ng-submit to define the submit button call -->
+<form ng-submit="login()">
+  <p>
+    <label class="control-label">Username</label>
+    <!-- using ng-model to fill the user.username in $scope -->
+  	<input type="text" placeholder="Username" ng-model="user.username" />
+  </p>
+  <p>
+    <label class="control-label">Password</label>
+    <!-- using ng-model to fill the user.password in $scope -->
+  	<input type="password" placeholder="Password" ng-model="user.password" /><br/>
+  </p>
+  <p>
+    <button type="submit" class="btn btn-primary">Login</button>
+  </p>
+</form>
